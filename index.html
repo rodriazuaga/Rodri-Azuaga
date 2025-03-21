@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Rodrigo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Rodrigo Azuaga</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Rodrigo Azuaga</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre Mi</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/1719495877567.jfif" alt="Rodrigo Azuaga Foto">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hola, soy</p>
+            <h1 class="title">Rodrigo Azuaga</h1>
+            <p class="section__text__p2">Solutions Architect</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_Rodrigo_Azuaga.pdf')">
+                    Descargar CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="Mi perfil de Linkedin" class="icon" 
+                onclick="window.open('https://linkedin.com/in/rodrigo-azuaga-45b533268')">
+                <img src="./assets/github.png" alt="Mi perfil de GitHub" class="icon" 
+                onclick="window.open('https://github.com/rodriazuaga')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Conoce</p>
+        <h1 class="title">Sobre Mi</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png" alt="Foto de perfil" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experiencia" class="icon">
+                        <h3>Cloud & DevOps Specialist</h3>
+                        <p>2x AWS Certified</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Formación" class="icon">
+                        <h3>Formación</h3>
+                        <p>Desarrollo de Aplicaciones Multiplataforma</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Desarrollador especializado en herramientas y tecnologías que optimizan los procesos de desarrollo y despliegue de software. Experto en la implementación de soluciones en la nube con un enfoque en la automatización, escalabilidad y seguridad. Amplia experiencia en herramientas DevOps, integrando prácticas de CI/CD y gestionando entornos basados en Linux. Sólidos conocimientos en ciberseguridad y redes, aplicados para crear sistemas robustos y adaptados a las necesidades empresariales. Comprometido con la entrega de soluciones eficientes, seguras y alineadas con los objetivos estratégicos de las organizaciones.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Flecha icon" class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explora mis</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Lenguajes</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>HTML/CSS</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>NodeJS</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Herramientas</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>MySql</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>Android</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>Spring</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>BootStrap</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experiencia icon"
+                            class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Nivel Alto</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Flecha icon" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Mis</p>
+        <h1 class="title">Proyectos</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/armada.jpg" alt="Proyecto 1"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Proyecto RSC</h2>
+                    <div class="btn-container">
+                        <p>Durante mis prácticas, colaboré activamente en el desarrollo de una aplicación web para la Armada Española, en el Ministerio de Defensa.
+                            Utilizando Angular para el frontend y Spring para el backend
+                        </p>
+                    </div>
+                    <h4>Angular | Spring</h4>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-contaainer">
+                        <img src="./assets/portolio.jfif" alt="Proyecto 1"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Portfolio Web</h2>
+                    <div class="btn-container">
+                        <p>Este proyecto
+                            resalta mi capacidad para trabajar en tecnologías frontend, así como mi enfoque en la
+                            creación de experiencias web robustas y atractivas.</p>
+                    </div>
+                        <h4>HTML | CSS | JavaScript</h4>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/logo.png" alt="Proyecto 1"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Proyecto XRV</h2>
+                    <div class="btn-container">
+                        <p>Como líder de desarrollo, encabecé la creación de un completo sistema de gestión
+                            escolar en Java y desarrollé un módulo administrativo con un CRUD completo, consumido en la app
+                            móvil a través de una API-REST</p>
+                    </div>
+                    <h4>Java | PHP | Android Studio</h4>
+                </div>
+            </div>
+                <img src="./assets/arrow.png" alt="Flecha icon" class="icon arrow"
+                onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+    <p class="section__text__p1">Formas de</p>
+    <h1 class="title">Contactarme</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Icono Email"
+            class="icon contact-icon">
+            <p><a href="mailto:rodrigoazuaga19@gmail.com">rodrigoazuaga19@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="Icono Linkedin"
+            class="icon contact-icon">
+            <p><a href="https://linkedin.com/in/rodrigo-azuaga-45b533268">LinkedIn</a></p>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre Mi</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rodrigo Azuaga</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
